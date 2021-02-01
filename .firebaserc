@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "auto-market-place": {
+      "hosting": {
+        "auto-market": [
+          "auto-market-place"
+        ]
+      }
+    }
+  }
+}

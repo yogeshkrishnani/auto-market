@@ -22,7 +22,6 @@
           "options": {
             "outputPath": "dist/auto-market",
             "index": "src/index.html",
-            "localize": true,
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
@@ -126,6 +125,10 @@
               "devServerTarget": "auto-market:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
