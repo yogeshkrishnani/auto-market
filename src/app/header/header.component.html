@@ -1,0 +1,76 @@
+<mat-toolbar class="am-header">
+
+  <a mat-button class="title">auto.market</a>
+
+  <nav class="am-nav-bar">
+
+    <a
+      i18n
+      mat-button
+      routerLink="/home"
+      routerLinkActive="active"
+    >
+      Home
+    </a>
+
+    <a
+      i18n
+      mat-button
+      routerLink="/buy-car"
+      routerLinkActive="active"
+    >
+      Buy Car
+    </a>
+
+    <a
+      i18n
+      disabled
+      mat-button
+      href="/sell-car/"
+    >
+      Sell Car
+    </a>
+
+    <a
+      i18n
+      disabled
+      mat-button
+      href="/market/"
+    >
+      Market
+    </a>
+
+    <a
+      i18n
+      disabled
+      mat-button href="/contact-us/"
+    >
+      Contact us
+    </a>
+
+  </nav>
+
+  <div class="flex-spacer"></div>
+
+  <div class="actions">
+
+    <button mat-icon-button aria-label="Car">
+      <mat-icon>directions_car</mat-icon>
+    </button>
+
+    <button mat-icon-button aria-label="Favorites">
+      <mat-icon>star_border</mat-icon>
+    </button>
+
+    <button mat-button aria-label="Sign In">
+      <mat-icon>person_outline</mat-icon>
+      Sign In
+    </button>
+
+    <button i18n color="accent" mat-raised-button aria-label="Sign Up">
+      Sign Up
+    </button>
+
+  </div>
+
+</mat-toolbar>

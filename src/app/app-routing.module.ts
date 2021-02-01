@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from 'src/app/home/home.component';
+import { BuyCarComponent } from 'src/app/buy-car/buy-car.component';
 
-const routes: Routes = [];
+const routes : Routes = [
+  { path : '', redirectTo : '/home', pathMatch : 'full' },
+  { path : 'home', component : HomeComponent },
+  { path : 'buy-car', component : BuyCarComponent },
+];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+@NgModule( {
+  imports : [ RouterModule.forRoot( routes ) ],
+  exports : [ RouterModule ]
+} )
+export class AppRoutingModule {
+}

@@ -1,0 +1,32 @@
+:host {
+  .am-header {
+    padding: 1.5rem;
+
+    .title {
+      font-weight: bold;
+    }
+
+    .am-nav-bar {
+      margin-left: 2rem;
+
+      a {
+        color: inherit;
+        font-weight: normal;
+        min-width: 5rem;
+
+        &.active {
+          border-bottom: 0.15rem solid #d84315;
+          border-radius: 0;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .actions {
+      .mat-button,
+      .mat-raised-button {
+        font-weight: normal;
+      }
+    }
+  }
+}

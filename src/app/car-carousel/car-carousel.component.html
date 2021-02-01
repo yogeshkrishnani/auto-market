@@ -1,0 +1,35 @@
+<button
+  (click)="goBackward()"
+  [disabled]="currentScrollPosIndex < maxNumberOfImagesInView"
+  mat-icon-button
+  class="backward-navigation"
+>
+  <mat-icon>chevron_left</mat-icon>
+</button>
+
+<div
+  class="image-list"
+>
+  <mat-card
+    #imageList
+    *ngFor="let imageInfo of carImages"
+  >
+    <mat-card-content>
+      <img [src]="imageInfo.url">
+    </mat-card-content>
+    <mat-card-footer>
+      <mat-card-subtitle class="overflow-ellipsis">
+        {{ imageInfo.title }}
+      </mat-card-subtitle>
+    </mat-card-footer>
+  </mat-card>
+</div>
+
+<button
+  (click)="goForward()"
+  [disabled]="currentScrollPosIndex >= lastItemIndex"
+  mat-icon-button
+  class="forward-navigation"
+>
+  <mat-icon>chevron_right</mat-icon>
+</button>

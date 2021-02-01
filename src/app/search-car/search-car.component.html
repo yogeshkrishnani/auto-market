@@ -1,0 +1,41 @@
+<div class="car-search-container">
+
+  <mat-form-field class="location" appearance="legacy">
+    <mat-icon matPrefix>location_on</mat-icon>
+    <mat-select value="Toronto">
+      <mat-option value="Toronto">Toronto (+100km)</mat-option>
+      <mat-option value="Montreal">Montreal</mat-option>
+      <mat-option value="Vancouver">Vancouver</mat-option>
+      <mat-option value="Calgary">Calgary</mat-option>
+      <mat-option value="Edmonton">Edmonton</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="car-brand" appearance="legacy">
+    <mat-icon matPrefix>directions_car</mat-icon>
+    <mat-select i18n-placeholder placeholder="Brand and Model">
+      <mat-option value="Ford">Ford</mat-option>
+      <mat-option value="Toyota">Toyota</mat-option>
+      <mat-option value="Honda">Honda</mat-option>
+      <mat-option value="Nissan">Nissan</mat-option>
+      <mat-option value="Hyundai">Hyundai</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="max-price" appearance="legacy">
+    <mat-icon matPrefix>account_balance_wallet</mat-icon>
+    <input i18n-placeholder matInput placeholder="Max Price" type="number">
+  </mat-form-field>
+
+  <button
+    class="search-car"
+    color="accent"
+    id="search-car-button"
+    i18n
+    mat-raised-button
+  >
+    <mat-icon>search</mat-icon>
+    Search
+  </button>
+
+</div>

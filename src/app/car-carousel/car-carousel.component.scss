@@ -1,0 +1,65 @@
+:host {
+  display: flex;
+  align-items: center;
+  max-height: 18rem;
+
+  .backward-navigation,
+  .forward-navigation {
+    border: none;
+    color: black;
+    max-width: 10rem;
+
+    &[disabled] {
+      opacity: 0.5;
+    }
+  }
+
+  .image-list {
+    display: flex;
+    flex-grow: 1;
+    overflow-x: hidden;
+
+    .mat-card {
+      background: transparent;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 1rem;
+      min-width: calc(20% - 2rem);
+      width: calc(20% - 2rem);
+
+      .mat-card-actions {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 0.4rem;
+        top: 0.3rem;
+        z-index: 1;
+
+        .mat-button {
+          border: none;
+          color: black;
+          padding: 0;
+        }
+      }
+
+      .mat-card-content {
+        margin: 0;
+
+        img {
+          height: 10rem;
+          width: 10rem;
+        }
+      }
+
+      .mat-card-footer {
+        text-align: center;
+        padding-top: 0.25rem;
+
+        .mat-card-subtitle {
+          color: black;
+        }
+      }
+    }
+
+  }
+}

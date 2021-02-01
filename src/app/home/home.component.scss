@@ -1,0 +1,28 @@
+:host {
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 33%;
+
+    .market-place-for-text {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .find-your-next-car-text {
+      font-size: 2.4rem;
+      letter-spacing: 0.4rem;
+      margin-bottom: 2rem;
+    }
+
+    am-car-catalog-by-category {
+      margin: 10rem 0;
+    }
+
+  }
+}
